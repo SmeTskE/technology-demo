@@ -24,12 +24,12 @@ public class LoginTask extends AsyncTask<Void, Long, String> {
         OkHttpClient httpClient = new OkHttpClient();
 
         RequestBody requestBody = new FormEncodingBuilder()
-                .add("username", "cl120189rs")
-                .add("password", "test")
+                .add("username", "herp")
+                .add("password", "derp")
                 .build();
 
         Request request = new Request.Builder()
-                .url("http://api.werf-registratie.be/login")
+                .url("http://www.yoursite.com/service")
                 .addHeader("Accept", "application/json")
                 .post(requestBody)
                 .build();
